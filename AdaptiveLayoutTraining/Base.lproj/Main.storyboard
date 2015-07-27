@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaptiveLayoutTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhone 6" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbS-Br-bap">
+                                <rect key="frame" x="247" y="22" width="106" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hq4-k5-Qzh" userLabel="buynow">
+                                <rect key="frame" x="424" y="530" width="160" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="J6p-TJ-7fm"/>
+                                    <constraint firstAttribute="height" constant="62" id="ZWL-vA-VfX"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="buynow">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone6white" translatesAutoresizingMaskIntoConstraints="NO" id="niq-Dg-akY">
+                                <rect key="frame" x="124" y="135" width="352" height="330"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="352" id="tWJ-uo-6Ew">
+                                        <variation key="heightClass=compact" constant="280"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="330" id="ugN-RN-LPe">
+                                        <variation key="heightClass=compact" constant="220"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone6black" translatesAutoresizingMaskIntoConstraints="NO" id="PUr-RH-xiz">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD$ 649" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwo-EP-5Aa">
+                                <rect key="frame" x="298" y="551" width="121" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="sbS-Br-bap" secondAttribute="centerX" id="BQ0-18-iAH"/>
+                            <constraint firstItem="niq-Dg-akY" firstAttribute="centerY" secondItem="iwo-EP-5Aa" secondAttribute="centerY" constant="0.5" id="BWu-Be-y30"/>
+                            <constraint firstItem="hq4-k5-Qzh" firstAttribute="centerX" secondItem="iwo-EP-5Aa" secondAttribute="centerX" constant="-0.5" id="DJs-E3-Jog"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hq4-k5-Qzh" secondAttribute="bottom" constant="8" id="Fxo-4b-5Yi"/>
+                            <constraint firstItem="niq-Dg-akY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Iof-MY-Ulh"/>
+                            <constraint firstItem="hq4-k5-Qzh" firstAttribute="centerY" secondItem="iwo-EP-5Aa" secondAttribute="centerY" constant="-4.5" id="K6N-tc-GuG"/>
+                            <constraint firstItem="hq4-k5-Qzh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="KYd-bT-lOP"/>
+                            <constraint firstItem="hq4-k5-Qzh" firstAttribute="leading" secondItem="iwo-EP-5Aa" secondAttribute="trailing" constant="5" id="THO-dN-zRf"/>
+                            <constraint firstItem="sbS-Br-bap" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="2" id="TVS-EQ-6SN"/>
+                            <constraint firstAttribute="centerX" secondItem="niq-Dg-akY" secondAttribute="centerX" id="Vkf-1O-u24"/>
+                            <constraint firstItem="niq-Dg-akY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bGr-ss-MdM"/>
+                            <constraint firstAttribute="centerY" secondItem="niq-Dg-akY" secondAttribute="centerY" id="jNu-st-e5K"/>
+                            <constraint firstItem="PUr-RH-xiz" firstAttribute="centerY" secondItem="niq-Dg-akY" secondAttribute="centerY" constant="26" id="qo1-rk-Chc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PUr-RH-xiz" secondAttribute="trailing" constant="148" id="zM5-QG-t29"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="PUr-RH-xiz"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="qo1-rk-Chc"/>
+                                <exclude reference="zM5-QG-t29"/>
+                                <exclude reference="BWu-Be-y30"/>
+                                <exclude reference="Iof-MY-Ulh"/>
+                                <exclude reference="bGr-ss-MdM"/>
+                                <exclude reference="DJs-E3-Jog"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="BWu-Be-y30"/>
+                                <exclude reference="Vkf-1O-u24"/>
+                                <include reference="bGr-ss-MdM"/>
+                                <include reference="DJs-E3-Jog"/>
+                                <exclude reference="K6N-tc-GuG"/>
+                                <exclude reference="THO-dN-zRf"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="PUr-RH-xiz"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="qo1-rk-Chc"/>
+                                <include reference="zM5-QG-t29"/>
+                                <include reference="Iof-MY-Ulh"/>
+                                <exclude reference="Vkf-1O-u24"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248" y="294"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="buynow" width="250" height="101"/>
+        <image name="iphone6black" width="144" height="291"/>
+        <image name="iphone6white" width="247" height="466"/>
+    </resources>
+</document>
